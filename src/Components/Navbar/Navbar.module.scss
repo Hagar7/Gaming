@@ -1,0 +1,23 @@
+@import '../../index.scss';
+
+
+
+.navy{
+    border-bottom: 1px solid $borderColor;
+
+    .logotitle{
+        font-family: $mainFont;
+        .logo{
+            width: $imgWidth;
+           
+        }
+     
+    }
+    .myBtn{
+        &:hover{
+            background-color: transparent !important;
+        }
+        border: 1px solid $blueColor !important;
+        color: $blueColor !important;
+    }
+}

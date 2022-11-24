@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.reg{
+    min-height: 70vh;
+    .item{
+        background: {
+            image:url('../../../public/images/2.jpg');
+            position: center;
+            size: cover;
+            repeat:no-repeat;
+        };
+         
+    }
+    .itm{
+        background-color: $secondaryColor; 
+        .errorMsg{
+            color:$blueColor;
+        }
+        .inputData input{
+            background-color: #1c1e22 !important;
+            border: 1px solid transparent !important;    
+            box-shadow: 0 0  0 transparent !important;
+            color:$textColor;
+        }
+        .myBtn{
+            &:hover{
+                border-color: $btnBorder !important;
+            }
+            background-color: #424649 !important;
+            border-color: $btnBorder !important;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:767px){
+    .item{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .item{
+        display: none;
+    }
+}

@@ -1,0 +1,70 @@
+@import '../../index.scss';
+
+ 
+.home{
+    background: {
+        image:url('../../../public/images/paladins.b44d33d6e7ee1ba8.png');
+        position: center center;
+        size:fit-content;
+        repeat:no-repeat;
+    }
+    height: 250px; 
+    background-color: #1c1e22;
+    span{
+        color: $blueColor;
+    }
+}
+
+.items{
+    .item {
+        overflow: hidden;
+        transition: 0.5s all;
+        @include borderRadius(4px);
+        box-shadow: 5px 5px 5px  rgba(20, 19, 20, 0.2);
+        .itemFooter{
+            display: flex;
+            justify-content: space-between;
+            background-color: $secondaryColor;
+        }
+        img{
+            &:hover{
+                @include skew (1.1)
+            }
+            transition: 0.5s all;
+            -webkit-transition: 0.5s all;
+            -moz-transition: 0.5s all;
+            -ms-transition: 0.5s all;
+            -o-transition: 0.5s all;
+    }
+    .myBtn{
+        background-color: $blueColor;
+        font-size: 12px;
+        height: 30px;
+        font-weight:bold;
+        letter-spacing: 0.3px;
+      
+        
+
+    }
+    }
+}
+@media screen and (max-width:767px){
+    .home{
+        height: 280px; 
+    }
+    .item {
+margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .home{
+        height: 250px; 
+    }
+    .item {
+        margin-bottom: 15px;
+            }
+        }
+
+
+    

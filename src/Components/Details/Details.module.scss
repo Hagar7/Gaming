@@ -1,0 +1,59 @@
+@import '../../index.scss';
+
+
+.item {
+    img{
+        @include borderRadius(10px)
+    }
+    .left {
+        display: flex;
+        justify-content: space-between;
+       
+        .btnright {
+            margin-left: 15px;
+            flex-grow: 2;
+            background-color: $blueColor;
+            font-weight:bold;
+             letter-spacing: 0.3px;
+        }
+        .myBtn{
+           &:hover{
+            background-color: #32383E !important;
+            border: 1px solid transparent;
+           }
+           background-color: #32383E !important;
+            letter-spacing: 0.3px;
+        }
+    }
+   
+}
+.bio{
+    color: $textClr;
+}
+.footerItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+   .small{
+    font-size: 15px;
+   }
+}
+@media screen and (max-width:767px){
+    .left {
+        flex-direction: column;
+        .myBtn{
+            margin-bottom: 10px;
+        }
+
+        .btnright {
+           margin-left: 0px;
+            flex-grow: 0;
+
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+   
+        }

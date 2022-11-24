@@ -1,0 +1,44 @@
+@import '../../index.scss';
+
+.log{
+    min-height: 70vh;
+    .item{
+        background: {
+            image:url('../../../public/images/2.jpg');
+            position: center;
+            size: cover;
+            repeat:no-repeat;
+        }; 
+    }
+    .itm{
+        background-color: $secondaryColor;
+        .infoImg{
+            width: $Width;
+        }
+        .info{
+            width: 85%;
+            margin: auto;
+        }
+        .myBtn{
+            &:hover{
+                border-color: $btnBorder !important;
+            }
+            background-color: #424649 !important;
+            border-color: $btnBorder !important;
+        }
+    }
+
+   
+}
+
+@media screen and (max-width:767px){
+    .item{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .item{
+        display: none;
+    }
+}

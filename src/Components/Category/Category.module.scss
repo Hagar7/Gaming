@@ -1,0 +1,86 @@
+@import '../../index.scss';
+
+
+
+.items{
+    .item {
+        overflow: hidden;
+        transition: 0.5s all;
+        @include borderRadius(4px);
+        box-shadow: 5px 5px 5px  rgba(20, 19, 20, 0.2);
+        margin-bottom: 15px;
+        .itemBottom{
+            background-color: $secondaryColor;
+            .itemFooter{
+                display: flex;
+                justify-content: space-between;
+            }
+
+        }
+        
+        img{
+            &:hover{
+                @include skew (1.1)
+            }
+            transition: 0.5s all;
+            -webkit-transition: 0.5s all;
+            -moz-transition: 0.5s all;
+            -ms-transition: 0.5s all;
+            -o-transition: 0.5s all;
+    }
+    .myBtn{
+        background-color: $blueColor;
+        font-size: 12px;
+        height: 30px;
+        font-weight:bold;
+        letter-spacing: 0.3px;
+    }
+    .title{
+      font-size: 18px;
+    }
+    .btns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btnsRight{
+            display: flex;
+        justify-content: space-between;
+        align-items: center;
+            .genre{
+                margin-right:10px;
+                background-color: #7A8288 !important;
+                font-size: 11px;
+                padding:0 3px;
+                color: $mainColor;
+                font-weight: bold;
+                @include borderRadius(4px)
+            }
+        }
+    }
+    }
+  
+}
+.myBtn{
+    &:hover{
+        border-color: $btnBorder !important;
+    }
+    background-color: #424649 !important;
+    border-color: $btnBorder !important;
+}
+.loading{
+    height: 60vh;
+    margin: auto;
+   display: flex;
+   justify-content: space-between;
+   width:20%;
+   align-items: center;
+   padding-top: 50px;
+   font-size: 30px;
+    @for $i from 1 through 4 {
+    .child#{$i}{
+        color: rgba(224, 19, 77,1/$i);
+        background-color: rgb(224, 19, 77);
+    }
+    }
+}
