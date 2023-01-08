@@ -228,11 +228,21 @@ export default function Register() {
                 </form>
                 <div className={`${style.spany} py-2 text-muted`}>
                   This site is protected by reCAPTCHA and the Google
-                  <a href="https://www.google.com/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "#6c757d" }}>
+                  <a
+                    href="https://www.google.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "none", color: "#6c757d" }}
+                  >
                     Privacy Policy
                   </a>
                   and
-                  <a href="https://www.google.com/" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "#6c757d" }}>
+                  <a
+                    href="https://www.google.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "none", color: "#6c757d" }}
+                  >
                     Terms of Service
                   </a>
                   apply.
@@ -242,7 +252,8 @@ export default function Register() {
                   Already a member?{" "}
                   <Link
                     style={{ textDecoration: "none", color: "#4799eb" }}
-                    to="/login">
+                    to="/login"
+                  >
                     Log in
                   </Link>
                 </span>
