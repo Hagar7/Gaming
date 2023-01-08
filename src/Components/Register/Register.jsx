@@ -101,7 +101,7 @@ export default function Register() {
       });
     } else {
       let { data } = await axios.post(
-        "https://route-egypt-api.herokuapp.com/signup",
+        "https://sticky-note-fe.vercel.app/signup",
         user
       );
       if (data.message === "success") {
@@ -114,7 +114,7 @@ export default function Register() {
   return (
     <>
       <div className="container">
-        <div className={`${style.reg} py-5 px-5`}>
+        <div className={`${style.reg}  `}>
           <div className="row">
             <div className={`${style.item} col-lg-6`}></div>
             <div className={`${style.itm} col-lg-6 text-center`}>

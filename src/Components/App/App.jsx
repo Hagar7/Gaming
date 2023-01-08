@@ -1,6 +1,6 @@
 
-import { useContext} from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useContext } from "react";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { AuthenContext } from "../../Context/AuthContexet";
 import All from "../All/All";
 import Category from "../Category/Category";
@@ -18,7 +18,7 @@ import SortBy from "../SortBy/SortBy";
 function App() {
  const {userData,saveUserData,logout} =useContext(AuthenContext);
 
-  let routes = createBrowserRouter([
+  let routes = createHashRouter([
     {path:"/",element:<MasterLayout userData={userData} logout={logout}/>,errorElement:<NotFound/>,children:[
       {index:true,element:<ProtectedRoute userData={userData} ><Home/></ProtectedRoute>},
       {path:'all',element:<ProtectedRoute userData={userData}><All/></ProtectedRoute>},
