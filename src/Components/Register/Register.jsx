@@ -101,7 +101,7 @@ export default function Register() {
       });
     } else {
       let { data } = await axios.post(
-        "https://sticky-note-fe.vercel.app/signup",
+        "https://movies-front-kappa.vercel.app/user/signUp",
         user
       );
       if (data.message === "success") {

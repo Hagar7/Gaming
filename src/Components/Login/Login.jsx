@@ -69,7 +69,7 @@ SetUserValidation({
     });
   }
   else{
-    let {data} = await axios.post('https://sticky-note-fe.vercel.app/signin',user)
+    let {data} = await axios.post('https://movies-front-kappa.vercel.app/user/login',user)
     if(data.message === "success"){
     localStorage.setItem('token',data.token)
     saveUserData()

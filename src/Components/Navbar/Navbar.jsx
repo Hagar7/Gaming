@@ -3,7 +3,6 @@ import style from './Navbar.module.scss'
 
 export default function Navbar({userData,logout}) {
    
- 
   // const uniqueObjects = [...new Map(gamigData.map(item => [item.genre, item])).values()]
 
   return (
@@ -74,18 +73,19 @@ export default function Navbar({userData,logout}) {
       </>:""}
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
           {userData?
-          <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Profile
+          <Link className='dropdown-item text-muted' onClick={logout} >Log out</Link>
+        //   <li className="nav-item dropdown">
+        //   <Link className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        //     Profile
             
-          </Link>
-          <ul className="dropdown-menu">
-            <li><Link className="dropdown-item text-muted" >{userData.first_name}</Link></li>
-            <li >
-           <Link className='dropdown-item text-muted' onClick={logout} >Log out</Link>
-         </li>
-          </ul>
-        </li>
+        //   </Link>
+        //   <ul className="dropdown-menu">
+        //     {/* <li><Link className="dropdown-item text-muted" >{userData.first_name}</Link></li> */}
+        //     <li >
+           
+        //  </li>
+        //   </ul>
+        // </li>
           :<>
           <li className="nav-item">
         <Link className="nav-link " aria-current="page" to='login'>Login</Link>
